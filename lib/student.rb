@@ -34,7 +34,7 @@ class Student
 
   def self.all_students_in_grade_9
     sql = <<-SQL
-        SELECT * FROM Students
+        SELECT * FROM students
         WHERE grade = 9
       SQL
 
@@ -43,7 +43,7 @@ class Student
 
   def self.students_below_12th_grade
     sql = <<-SQL
-        SELECT * FROM Students
+        SELECT * FROM students
         WHERE grade < 12
       SQL
 
