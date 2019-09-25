@@ -54,7 +54,6 @@ class Student
     sql = <<-SQL
         SELECT * FROM Students
         WHERE grade = 10
-        ORDER BY name
         LIMIT ?
       SQL
 
