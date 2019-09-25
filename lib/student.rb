@@ -55,10 +55,10 @@ class Student
         SELECT * FROM Students
         WHERE grade = 10
         ORDER BY name
-        LIMIT x
+        LIMIT ?
       SQL
 
-    DB[:conn].execute(sql)
+    DB[:conn].execute(sql, x)
   end
 
   def save
